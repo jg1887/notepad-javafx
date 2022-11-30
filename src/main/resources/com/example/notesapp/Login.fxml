@@ -7,26 +7,34 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0B0B45;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #0B0B45;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notesapp.controller.LoginController">
    <children>
-      <TextField layoutX="226.0" layoutY="81.0" promptText="Enter your username..." />
-      <TextField layoutX="227.0" layoutY="125.0" promptText="Enter your password..." />
-      <Label layoutX="139.0" layoutY="83.0" text="Username" textFill="#fc0101">
+      <TextField alignment="TOP_LEFT" layoutX="869.0" layoutY="421.0" promptText="Enter your username...">
          <font>
-            <Font size="15.0" />
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField alignment="TOP_LEFT" layoutX="869.0" layoutY="494.0" promptText="Enter your password...">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label alignment="TOP_LEFT" layoutX="755.0" layoutY="427.0" text="Username" textFill="#fc0101">
+         <font>
+            <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="139.0" layoutY="127.0" text="Password" textFill="#fc0101">
+      <Label layoutX="763.0" layoutY="503.0" text="Password" textFill="#fc0101">
          <font>
-            <Font size="15.0" />
+            <Font size="18.0" />
          </font>
       </Label>
-      <Text fill="#bc0f0f" layoutX="244.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+      <Text fill="#bc0f0f" layoutX="835.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" textAlignment="CENTER">
          <font>
-            <Font size="39.0" />
+            <Font size="100.0" />
          </font>
       </Text>
-      <Button layoutX="274.0" layoutY="200.0" mnemonicParsing="false" text="Enter" />
+      <Button alignment="CENTER" layoutX="942.0" layoutY="612.0" mnemonicParsing="false" text="Enter" onAction="#onEnterButtonClick">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
    </children>
 </AnchorPane>
